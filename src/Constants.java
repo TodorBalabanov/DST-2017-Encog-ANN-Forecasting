@@ -5,26 +5,26 @@ import org.encog.engine.network.activation.ActivationTANH;
 
 public class Constants {
 	public static final Random PRNG = new Random();
-	
-	public static final long NUMBER_OF_EXPERIMENTS = 30;
-	
-	/*
-	 * Горна граница, в милисекунди, за време на обучение.
-	 */
-	public static final long MAX_TRAINING_MILLISECONDS = 10000;
+
+	public static final long NUMBER_OF_EXPERIMENTS = 1;
 
 	/*
-	 * Интервал, в милисекунди, през който ще се очита прогреса на обучението.
+	 * Р“РѕСЂРЅР° РіСЂР°РЅРёС†Р°, РІ РјРёР»РёСЃРµРєСѓРЅРґРё, Р·Р° РІСЂРµРјРµ РЅР° РѕР±СѓС‡РµРЅРёРµ.
 	 */
-	public static final long SINGLE_MEASUREMENT_MILLISECONDS = 100;
+	public static final long MAX_TRAINING_MILLISECONDS = 60000;
 
 	/*
-	 * Избор на активационна функция. Направено е така за да може с лекота да се
-	 * сменят различните активационни функции и да се наблюдават евентуални разлики
-	 * при процеса на обучение, идващи от особеносттите на активационната функция.
+	 * РРЅС‚РµСЂРІР°Р», РІ РјРёР»РёСЃРµРєСѓРЅРґРё, РїСЂРµР· РєРѕР№С‚Рѕ С‰Рµ СЃРµ РѕС‡РёС‚Р° РїСЂРѕРіСЂРµСЃР° РЅР° РѕР±СѓС‡РµРЅРёРµС‚Рѕ.
+	 */
+	public static final long SINGLE_MEASUREMENT_MILLISECONDS = 1000;
+
+	/*
+	 * РР·Р±РѕСЂ РЅР° Р°РєС‚РёРІР°С†РёРѕРЅРЅР° С„СѓРЅРєС†РёСЏ. РќР°РїСЂР°РІРµРЅРѕ Рµ С‚Р°РєР° Р·Р° РґР° РјРѕР¶Рµ СЃ Р»РµРєРѕС‚Р° РґР° СЃРµ
+	 * СЃРјРµРЅСЏС‚ СЂР°Р·Р»РёС‡РЅРёС‚Рµ Р°РєС‚РёРІР°С†РёРѕРЅРЅРё С„СѓРЅРєС†РёРё Рё РґР° СЃРµ РЅР°Р±Р»СЋРґР°РІР°С‚ РµРІРµРЅС‚СѓР°Р»РЅРё СЂР°Р·Р»РёРєРё
+	 * РїСЂРё РїСЂРѕС†РµСЃР° РЅР° РѕР±СѓС‡РµРЅРёРµ, РёРґРІР°С‰Рё РѕС‚ РѕСЃРѕР±РµРЅРѕСЃС‚С‚РёС‚Рµ РЅР° Р°РєС‚РёРІР°С†РёРѕРЅРЅР°С‚Р° С„СѓРЅРєС†РёСЏ.
 	 */
 	public final static ActivationFunction ACTIVATION = new ActivationTANH();
-	
+
 	public static final int MIN_HIDDEN_NUMBER = 1;
 
 	public static final int MAX_HIDDEN_NUBMER = 10;
